@@ -22,8 +22,7 @@ class SenderUserService
         $filterEntity = new UserFilterEntity();
         $filterEntity->year = $request->year;
         $filterEntity->month = $request->month;
-        $filterEntity->page = $request->page;
 
-        return $this->userRepository->getUserList($filterEntity);
+        return $this->userRepository->getUserList($filterEntity, $request);
     }
 }

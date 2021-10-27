@@ -43,6 +43,9 @@
 
                 <tbody>
                 @foreach($userList as $user)
+                    @php
+                        $user = is_array($user) ? (object) $user : $user;
+                    @endphp
                     <tr>
                         <td>{{$user->id}}</td>
                         <td>{{$user->email_address}}</td>

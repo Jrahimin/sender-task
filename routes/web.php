@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return "This is Laravel ".app()->version();
+    return view('welcome');
 });
 
 Route::get('/users',  [SenderUserController::class, 'index'])->name('users');

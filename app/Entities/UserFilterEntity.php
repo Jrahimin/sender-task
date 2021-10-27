@@ -8,5 +8,6 @@ class UserFilterEntity
 {
     public $month;
     public $year;
-    public $page;
+    public $newKey;
+    public $oldKey;
 }
